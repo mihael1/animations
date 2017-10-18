@@ -1,6 +1,6 @@
 let back = document.querySelector("#newback");
 let startAnim = document.querySelector(".start");
-let hero = document.querySelector(".man")
+let hero = document.querySelector("#man")
 let aud = document.querySelector("#morningSound");
 aud.play();
 
@@ -19,28 +19,18 @@ function soundEnded() {
 }
 
 function backgroundNew() {
-    let x = document.getElementById("myDIV");
-    if (x.style.display === "none") {
+    let bg = document.getElementById("myDIV");
+    if (bg.style.display === "none") {
 
     } else {
-        x.style.display = "block";
+        bg.style.display = "block";
+
+        hero.classList.add("walk");
+        console.log("The man will walk in!")
     }
 }
+hero.addEventListener('animationend', heroStop)
 
-
-
-/* let horse = document.querySelector("#horse");
-  let horseSound = document.querySelector("#horseSound");
-
-  horse.addEventListener("click", playSound);
-
-  function playSound(){
-    horseSound.volume = .5;
-    horseSound.play();
-    horseSound.addEventListener('ended', soundEnded);
-  }
-
-  function soundEnded(){
-    console.log("The sound ended :-(")
-  }
-  */
+function heroStop() {
+    console.log("And itsssss over, short but sweet")
+}

@@ -173,7 +173,7 @@
 
     .start {
         position: fixed;
-        margin:auto;
+        margin: auto;
         width: 100%;
         height: 100%;
         background: url(background/start.svg) no-repeat;
@@ -206,39 +206,43 @@
         }
     }
 
-
     #myDIV {
+        position: fixed;
         width: 100%;
         height: 100%;
         display: none;
         animation: newback 1s forwards;
     }
-@keyframes newback{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
 
+    @keyframes newback {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 
-    /*.man{
-    margin: auto;
-    width: 220px;
-    height: 411px;
-    background-image: url(spritesheet.png);
-    background-position: 0;
-    animation: walk 1s infinite steps(8);
-    transform: translateY(11vh) scaleX(-1);
+    .walk {
+        position: fixed;
+        top: 100px;
+        width: 231px;
+        height: 411px;
+        background-image: url(spritesheet.png);
+        background-position: 0;
+        animation: walk 1s forwards steps(8);
         filter: FlipH;
-
-}
-
-@keyframes walk{
-    to{
-        background-position: -1761px 0px;
-        /* 1761 because of picture width
     }
-}
-*/
+
+    @keyframes walk {
+        0% {
+            transform: translateX(1400px) scaleX(-1);
+            ;
+            background-position: -1761px 0px;
+            /* 1761 because of picture width*/
+        }
+        100% {
+            transform: translateX(600px) scaleX(-1);
+            ;
+        }
+    }
