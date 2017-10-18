@@ -1,177 +1,214 @@
-body {
-    background: url(background/1.png) no-repeat;
-}
-
-img {
-    width: 100%;
-}
-
-.leftcliff1 {
-    position: fixed;
-    margin-left: -10px;
-    width: 1280px;
-    height: 800px;
-    background: url(background/3.png) no-repeat;
-    animation: lc1 1s forwards ease-in;
-}
-
-@keyframes lc1 {
-    0% {
-        background-position: -100vw;
+    body {
+        background: url(background/1.png) no-repeat;
+         background-attachment: fixed;
+        background-size: 1280px 800px;
     }
-    100% {
-        background-position: 0vw;
+
+    img {
+        width: 100%;
     }
-}
 
-.leftcliff {
-    position: fixed;
-    margin-left: -10px;
-    width: 1280px;
-    height: 800px;
-    background: url(background/2.png) no-repeat;
-    animation: lc 1s forwards ease-in;
-}
-
-@keyframes lc {
-    0% {
-        background-position: -100vw;
+    .leftcliff1 {
+        position: fixed;
+        margin-left: -10px;
+        width: 1280px;
+        height: 800px;
+        background: url(background/3.png) no-repeat;
+        animation: lc1 1.5s forwards ease-out;
     }
-    100% {
-        background-position: 0vw;
+
+    @keyframes lc1 {
+        0% {
+            background-position: -100vw;
+        }
+        100% {
+            background-position: 0vw;
+        }
     }
-}
 
-.backcliff {
-    position: fixed;
-    margin-left: -10px;
-    width: 1280px;
-    height: 800px;
-    background: url(background/6.png) no-repeat;
-    animation: bc 1s forwards ease-in;
-}
-
-@keyframes bc {
-    0% {
-        transform: translateY(-300vh);
+    .leftcliff {
+        position: fixed;
+        margin-left: -10px;
+        width: 1280px;
+        height: 800px;
+        background: url(background/2.png) no-repeat;
+        animation: lc 1.5s forwards ease-out;
     }
-    100% {
-        transform: translateY(0vh);
+
+    @keyframes lc {
+        0% {
+            background-position: -100vw;
+        }
+        100% {
+            background-position: 0vw;
+        }
     }
-}
 
-.waterfall {
-    position: fixed;
-    margin-left: -10px;
-    width: 1280px;
-    height: 800px;
-    background: url(background/4.png) no-repeat;
-    animation: wf 1s forwards ease-in;
-}
-
-@keyframes wf {
-    0% {
-        transform: translateY(300vh);
+    .backcliff {
+        position: fixed;
+        margin-left: -10px;
+        width: 1280px;
+        height: 800px;
+        background: url(background/6.png) no-repeat;
+        animation: bc 1.5s forwards ease-out;
     }
-    100% {
-        transform: translateY(0vh);
+
+    @keyframes bc {
+        0% {
+            transform: translateY(-300vh);
+        }
+        100% {
+            transform: translateY(0vh);
+        }
     }
-}
 
-.rightcliff {
-    position: fixed;
-    margin-left: -10px;
-    width: 1280px;
-    height: 800px;
-    background: url(background/7.png) no-repeat;
-    animation: rc 1s forwards ease-in;
-}
-
-@keyframes rc {
-    0% {
-        background-position: 500vw;
+    .waterfall {
+        position: absolute;
+        bottom: -25px;
+        left: -10px;
+        width: 341px;
+        height: 580px;
+        background-position: bottom;
+        background: url(background/waterfall.png) no-repeat;
+        animation: wtanim 1s infinite steps(6);
+        transform: translateY(11vh);
     }
-    100% {
-        background-position: 0vw;
+
+    @keyframes wtanim {
+        to {
+            background-position: -2044px 0px;
+        }
     }
-}
 
-.rightcliff1 {
-    position: fixed;
-    margin-left: -10px;
-    width: 1280px;
-    height: 800px;
-    background: url(background/8.png) no-repeat;
-    animation: rc1 1s forwards ease-in;
-}
-
-@keyframes rc1 {
-    0% {
-        background-position: 500vw;
+    .rightcliff {
+        position: fixed;
+        margin-left: -10px;
+        width: 1280px;
+        height: 800px;
+        background: url(background/7.png) no-repeat;
+        animation: rc 1.5s forwards ease-out;
     }
-    100% {
-        background-position: 0vw;
+
+    @keyframes rc {
+        0% {
+            background-position: 500vw;
+        }
+        100% {
+            background-position: 0vw;
+        }
     }
-}
 
-.water {
-    position: fixed;
-    margin-left: -10px;
-    width: 1280px;
-    height: 800px;
-    background: url(background/5.png) no-repeat;
-    animation: wt 1s forwards ease-in;
-}
-
-@keyframes wt {
-    0% {
-        transform: translateY(-300vh);
+    .rightcliff1 {
+        position: fixed;
+        margin-left: -10px;
+        width: 1280px;
+        height: 800px;
+        background: url(background/8.png) no-repeat;
+        animation: rc1 1.5s forwards ease-out;
     }
-    100% {
-        transform: translateY(0vh);
+
+    @keyframes rc1 {
+        0% {
+            background-position: 500vw;
+        }
+        100% {
+            background-position: 0vw;
+        }
     }
-}
 
-.title {
-    position: fixed;
-    margin-left: -10px;
-    width: 1280px;
-    height: 800px;
-    background: url(background/title.png) no-repeat;
-    animation: ttl 2s forwards ease-out;
-}
-
-@keyframes ttl {
-    0% {
-        opacity: 0;
-        transform: scale(0);
+    .water {
+        position: fixed;
+        margin-left: -10px;
+        width: 1280px;
+        height: 800px;
+        background: url(background/5.png) no-repeat;
+        animation: wt 1.5s forwards ease-out;
     }
-    100% {
-        transform: scale(1);
+
+    @keyframes wt {
+        0% {
+            transform: translateY(-300vh);
+        }
+        100% {
+            transform: translateY(0vh);
+        }
     }
-}
 
-.start {
-    position: fixed;
-    margin-left: -10px;
-    width: 1280px;
-    height: 800px;
-    background: url(background/start.svg) no-repeat;
-    animation: str 2.5s 1s forwards ease-out;
-}
-
-@keyframes str {
-    0% {
-        opacity: 0;
-
+    .sun {
+        position: fixed;
+        margin-left: -10px;
+        width: 1280px;
+        height: 800px;
+        background: url(background/9.png) no-repeat;
+        animation: rc 2.5s forwards cubic-bezier(0, .67, .12, 1);
     }
-    100% {
-        opacity:1;
+
+    @keyframes rc {
+        0% {
+            background-position: 1500vw;
+        }
+        100% {
+            background-position: 0vw;
+        }
     }
-}
 
+    .title {
+        position: fixed;
+        margin-left: -10px;
+        width: 1280px;
+        height: 800px;
+        background: url(background/title.png) no-repeat;
+        animation: ttl 2s forwards ease-out;
+    }
 
-/*.man{
+    @keyframes ttl {
+        0% {
+            opacity: 0;
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .start {
+        position: fixed;
+        margin-left: -10px;
+        width: 1280px;
+        height: 800px;
+        background: url(background/start.svg) no-repeat;
+        animation: str 3s forwards ease-out;
+    }
+
+    @keyframes str {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .sparkwater {
+        position: absolute;
+        bottom: -35px;
+        left: 100px;
+        width: 413px;
+        height: 300px;
+        background-image: url(background/clouds.png);
+        animation: upndown 1s infinite steps(5);
+        transform: translateY(11vh);
+    }
+
+    @keyframes upndown {
+        to {
+            background-position: -2063px 0px;
+            /* 1761 because of picture width*/
+        }
+    }
+
+.moveCSS
+    /*.man{
     margin: auto;
     width: 220px;
     height: 411px;
