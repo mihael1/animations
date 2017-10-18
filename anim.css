@@ -1,6 +1,6 @@
     body {
         background: url(background/1.png) no-repeat;
-         background-attachment: fixed;
+        background-attachment: fixed;
         background-size: 1280px 800px;
     }
 
@@ -63,13 +63,12 @@
     }
 
     .waterfall {
-        position: absolute;
-        bottom: -25px;
+        position: fixed;
         left: -10px;
         width: 341px;
-        height: 580px;
+        height: 800px;
         background-position: bottom;
-        background: url(background/waterfall.png) no-repeat;
+        background: url(background/waterfall_800.png) no-repeat;
         animation: wtanim 1s infinite steps(6);
         transform: translateY(11vh);
     }
@@ -99,6 +98,7 @@
     }
 
     .rightcliff1 {
+        margin-bottom: 200px;
         position: fixed;
         margin-left: -10px;
         width: 1280px;
@@ -190,14 +190,13 @@
     }
 
     .sparkwater {
-        position: absolute;
-        bottom: -35px;
+        margin-top: 530px;
+        position: fixed;
         left: 100px;
         width: 413px;
         height: 300px;
         background-image: url(background/clouds.png);
         animation: upndown 1s infinite steps(5);
-        transform: translateY(11vh);
     }
 
     @keyframes upndown {
@@ -207,7 +206,12 @@
         }
     }
 
-.moveCSS
+
+    #myDIV {
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
     /*.man{
     margin: auto;
     width: 220px;
